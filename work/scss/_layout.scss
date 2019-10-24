@@ -1,0 +1,119 @@
+#page{
+    @extend .container;
+} /*!General*/
+
+
+#masthead{
+    @extend .d-flex, .align-items-center, .justify-content-center;
+    background-image: url("/phpsandbox/wp/work/img/header.jpg")!important;
+    height: 200px;
+}
+.site-title{
+    font-family: $krona;
+    font-size: 50px;
+}
+.site-title a{
+    color:white !important;
+    &:visited{
+        color: white;
+    }
+    &:hover{
+        color: white;
+        text-decoration: none;
+    }
+}/*!Header*/
+
+.custom-logo{
+    width: 63px;
+    height: 60px;
+}
+#site-navigation{
+    border-top: 1px solid #252525;
+    z-index: 1;
+}
+#menu-item-42{/*Home*/
+    @extend .nav-link;
+    font-family: $montserrat;
+    & a{
+        @extend .text-decoration-none;
+    }
+    &:hover{
+        font-weight: bold;
+    }
+}
+#menu-item-41{/*History*/
+    @extend .nav-link;
+    font-family: $montserrat;
+    & a{
+        @extend .text-decoration-none;
+    }
+    &:hover{
+        font-weight: bold;
+    }
+}
+#menu-item-45{/*Shop*/
+    @extend .nav-link;
+    font-family: $montserrat;
+    & a{
+        @extend .text-decoration-none;
+    }
+    &:hover{
+        font-weight: bold;
+    }
+}
+.sub-menu{
+    background-color: white;
+}
+#menu-item-45:hover .sub-menu{
+    right: 0;
+    font-weight: 500;
+}
+#menu-item-54:hover, #menu-item-55:hover, #menu-item-56:hover, #menu-item-57:hover{
+    background-color: #ddd;
+    font-weight: 700;
+}
+#menu-item-54 a, #menu-item-55 a, #menu-item-56 a, #menu-item-57 a{
+    text-decoration: none;
+}
+.menu-mainmenu-container a{
+    color: black;
+}/*!navigation*/
+
+#primary{
+    @extend .jumbotron, .col-8, .d-inline-block, .align-items-center;
+    padding: 0;
+}
+
+.entry-title{
+    @extend .d-none;
+}
+.entry-content{
+    @extend .container;
+    font-family: $indie;
+    font-size: 2.6em;
+}
+
+
+#search-2{
+    margin: 0;
+    background-color: #ddd;
+}
+#categories-2{
+    margin: 0;
+    background-color: #ddd;
+}
+#secondary{
+    @extend .jumbotron;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+/*!main*/
+
+
+#colophon{
+    background: #ddd;
+}
+.post-edit-link{
+    @extend .d-none;
+}/*!Footer*/
